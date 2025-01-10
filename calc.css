@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    transition: background 0.5s ease-in-out;
+}
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+.calculator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    width: 100%;
+}
+#result {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.button {
+    height: 60px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+.button:active {
+    background-color: #777;
+}
+.operator {
+    background-color: #f79c42;
+}
+.operator:hover {
+    background-color: #e6892c;
+}
+.operator:active {
+    background-color: #d6792b;
+}
+.clear {
+    background-color: #dc3545;
+}
+.clear:hover {
+    background-color: #a71d2a;
+}
+.clear:active {
+    background-color: #7f1620;
+}
+.equal {
+    background-color: #28a745;
+}
+.equal:hover {
+    background-color: #218838;
+}
+.equal:active {
+    background-color: #1e7e34;
+}
+#but {
+    width: 280px;
+    margin-top: 10px;
+    border-radius: 30px;
+    margin-bottom: 50px;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+#but:hover {
+    background-color: #45a049;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#but:active {
+    background-color: #39843c;
+}
